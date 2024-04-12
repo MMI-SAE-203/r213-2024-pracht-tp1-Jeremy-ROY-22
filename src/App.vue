@@ -13,8 +13,12 @@ onErrorCaptured((err, instance, info) => {
     <nav>
       <ul>
         <li>
-          <RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink>
+          <RouterLink to="App.vue" class="text-red-500 underline"> Accueil </RouterLink>
         </li>
+        <li>
+          <RouterLink to="/" class="text-red-500 underline"> index </RouterLink>
+        </li>
+
       </ul>
     </nav>
   </header>
