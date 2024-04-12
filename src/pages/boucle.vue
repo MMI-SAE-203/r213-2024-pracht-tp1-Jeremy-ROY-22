@@ -26,6 +26,8 @@
     quis corporis et nam.`
   }
 ]
+const sectionOpen = ref(10)
+
 </script>
 
 <template>
@@ -33,7 +35,7 @@
     <br>
     <section v-for="({ label, texte }, key) of sectionsData" :key="key">
         <pre class="font-mono">key : {{ key }}</pre>
-        <pre class="font-mono">label : {{ label }}</pre>
-        <pre class="font-mono">texte : {{ texte }}</pre>
+        <pre @pointerdown="sectionOpen = sectionOpen === key ? 10 : key" class="font-mono">label : {{ label }}</pre>
+        <pre v-show="sectionOpen === key" class="font-mono">texte : {{ texte }}</pre>
     </section>
 </template>
