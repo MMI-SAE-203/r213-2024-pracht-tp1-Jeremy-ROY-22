@@ -11,11 +11,11 @@ onErrorCaptured((err, instance, info) => {
 </script>
 
 <template>
-  <header>
+  <header >
     <button
     aria-controls="mainNav"
     aria-expanded="true"
-    class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+    class="rounded-full border-2 border-green-600 bg-green-300 px-2"
     @pointerdown="menuIsOpen = !menuIsOpen"
     >
     menu
@@ -27,19 +27,19 @@ onErrorCaptured((err, instance, info) => {
   enter-to-class="translate-x-0"
   leave-active-class="-translate-x-full"
 >
-  <nav id="mainNav" v-show="menuIsOpen">
+  <nav id="mainNav" v-show="menuIsOpen" class="ml-3">
     <ul>
       <li>
-        <RouterLink to="App.vue" class="text-red-500 underline"> Accueil </RouterLink>
+        <RouterLink to="App.vue" class="text-blue-500 underline"> Accueil </RouterLink>
       </li>
       <li>
-        <RouterLink to="/" class="text-red-500 underline"> index </RouterLink>
+        <RouterLink to="/" class="text-blue-500 underline"> index </RouterLink>
       </li>
       <li>
-        <RouterLink to="/accordeon" class="text-red-500 underline"> accordeon </RouterLink>
+        <RouterLink to="/accordeon" class="text-blue-500 underline"> accordeon </RouterLink>
       </li>
       <li>
-        <RouterLink to="/boucle" class="text-red-500 underline"> boucle </RouterLink>
+        <RouterLink to="/boucle" class="text-blue-500 underline"> boucle </RouterLink>
       </li>
     </ul>
   </nav>
