@@ -7,7 +7,14 @@
   const test3 = ref(0);
 </script>
 <template>
+  
+  
+  
+  
   <br><br><br>
+  
+  
+  
   <button @click="td = !td" class="text-2xl">tests TD</button>
   <div v-show="td">
     <button @click="maVar = !maVar">caché ou pas caché</button> <br>
